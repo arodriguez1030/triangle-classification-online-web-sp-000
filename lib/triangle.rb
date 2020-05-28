@@ -13,7 +13,7 @@ class Triangle
     if @left + @right <= @middle || @middle = @left <= @right || @right + @middle <= @left || @left * @middle * @right == 0
       raise TriangleError
     elsif @left == @middle && @left == @right
-    :equilateral = self
+    self.kind = :equilateral
         end
   end
   
