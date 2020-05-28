@@ -18,8 +18,6 @@ class Triangle
   end
   
   class TriangleError < StandardError
-    def message
-      "The sum of the lengths of any two sides always exceeds the length of the third!"
-    end
+  
   end
 end
