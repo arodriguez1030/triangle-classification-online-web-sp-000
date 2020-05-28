@@ -14,6 +14,8 @@ class Triangle
       raise TriangleError
     elsif @left == @middle && @left == @right
     self.kind = :equilateral
+    elsif @left == @middle || @left == @right || @right == @middle
+    self.kind = :equilateral
         end
   end
   
