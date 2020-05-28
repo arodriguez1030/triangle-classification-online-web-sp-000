@@ -11,14 +11,14 @@ class Triangle
     
   
   def kind
-    if (self.left + self.right) <= self.middle || (self.middle = self.left) <= self.right || (self.right + self.middle) <= self.left || (self.left * self.middle * self.right) == 0
+    if (@left + @right) <= @middle || (@middle = @left) <= @right || (@right + @middle) <= @left || (@left * @middle * @right) == 0
       raise TriangleError
-    elsif self.left == self.middle && self.left == self.right
+    elsif @left == @middle && @left == @right
     self.kind = :equilateral
-    elsif self.left == self.middle || self.left == self.right || self.right == self.middle
-    self.kind = :isoceles
-  else
+    else @left != @middle && @left != @right && @right != @middle
     self.kind = :scalene
+  elsif 
+    self.kind = :isoceles
         end
   end
   
