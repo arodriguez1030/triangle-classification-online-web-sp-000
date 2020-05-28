@@ -15,9 +15,9 @@ class Triangle
       raise TriangleError
     elsif @left == @middle && @left == @right
     self.kind = :equilateral
-    else @left != @middle && @left != @right && @right != @middle
+    elsif @left != @middle && @left != @right && @right != @middle
     self.kind = :scalene
-  elsif 
+  else 
     self.kind = :isoceles
         end
   end
