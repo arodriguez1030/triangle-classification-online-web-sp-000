@@ -12,7 +12,7 @@ class Triangle
   def kind
     if @left + @right <= @middle || @middle = @left <= @right || @right + @middle <= @left
       raise TriangleError
-    elsif @left
+    elsif @left == 0 || 
         end
   end
   
