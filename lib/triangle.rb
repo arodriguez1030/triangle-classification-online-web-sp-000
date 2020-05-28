@@ -10,7 +10,8 @@ class Triangle
     
   
   def kind
-    if @left + @right < @middle
+    if @left + @right <= @middle || @middle = @left <= @right || @right + @middle <= @left
+      
         end
   end
   
