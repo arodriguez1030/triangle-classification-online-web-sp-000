@@ -1,7 +1,8 @@
 require 'pry'
 
 class Triangle
-  attr_accessor :left, :right, :middle, :kind
+  attr_accessor :left, :right, :middle, 
+  attr_writer
   def initialize (left, right, middle)
     @left = left
     @right = right
