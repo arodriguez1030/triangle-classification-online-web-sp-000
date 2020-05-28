@@ -16,7 +16,7 @@ class Triangle
     self.kind = :equilateral
     elsif @left == @middle || @left == @right || @right == @middle
     self.kind = :isoceles
-    elsif @left == @middle && @left == @right
+    elsif @left != @middle && @left == @right
     self.kind = :equilateral
         end
   end
